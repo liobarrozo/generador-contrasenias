@@ -58,5 +58,15 @@ const longPass = 8;
 function passGenerator() {
   let pass = [];
 
-  for (x = 0; x < longPass; x++) {}
+  for (let x = 0; x < longPass; x++) {
+    let randomIndex = Math.floor(Math.random() * letras.length);
+    pass.push(letras[randomIndex]);
+  }
+
+  return pass.join("");
 }
+function main() {
+  console.log(passGenerator());
+}
+
+main();
