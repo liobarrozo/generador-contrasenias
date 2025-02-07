@@ -65,8 +65,11 @@ function passGenerator() {
 
   return pass.join("");
 }
-function main() {
-  console.log(passGenerator());
-}
 
-main();
+const inputResultado = document.getElementById("contrasenia");
+const botonGenerador = document.getElementById("generator_button");
+
+botonGenerador.addEventListener("click", () => {
+  inputResultado.value = passGenerator();
+  console.log("clic");
+});

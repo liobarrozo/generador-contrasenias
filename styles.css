@@ -1,9 +1,12 @@
-.generator{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 50%;
+body {
+  background-color: lightgoldenrodyellow;
+}
+.generator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
 }
 
 #TituloPrincipal{
